@@ -48,6 +48,7 @@
         
     -->
     <link href="presentation.css" rel="stylesheet" />
+    <link href="prettify/prettify.css" rel="stylesheet" />
     
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -123,7 +124,7 @@
     -->
     <div id="first" class="step slide" data-x="-1100" data-y="-1500" data-wait="5">
         <h1>Développement Informatique <em>[Dév Info]</em></h1>
-        <q class="question">Être <b>Informaticien</b> aujourd'hui, qu'est-ce que cela signifie <em>concrètement</em> ?</q>
+        <q class="question">Être <b>informaticien</b> aujourd'hui, qu'est-ce que cela signifie <em>concrètement</em> ?</q>
     </div>
 
     <!--
@@ -144,18 +145,20 @@
     <div id="geek" class="step slide" data-x="0" data-y="-1500" data-wait="20">
         <q style="text-align: center">Est-ce un travail de Geek...</q>
         <div style="text-align: center; margin: 10px auto">
-            <iframe width="640" height="480" src="http://www.youtube.com/embed/HPPj6viIBmU?autoplay=1" frameborder="0" allowfullscreen></iframe>
+
+            <!--controls=0&-->
+            <iframe id="ytplayer" type="text/html" width="640" height="480" src="https://www.youtube.com/embed/HPPj6viIBmU?autoplay=1&loop=1&playlist=HPPj6viIBmU" frameborder="0" allowfullscreen></iframe>
         </div>
         <q style="font-size: 25px; text-align: center">...où l'on est collé toute la journée devant un ordinateur ?</q></q>
     </div>
 
-    <div id="passionnant" class="step slide" data-x="1100" data-y="-1500">
+    <div id="passionnant" class="step slide" data-x="1100" data-y="-1500" data-wait="20">
         <q>...Ou un métier <b>passionnant</b> et <b>social</b>, vous permettant de travailler dans de nombreux domaines professionnels : </q>
 
         <ul style="margin: 40px 0 0 30px;">
-            <li>Banque, Assurances,...</li>
-            <li>Recherche, Science, Médecine,...</li>
             <li>Technologies, Internet, Jeux Vidéos,...</li>
+            <li>Recherche, Science, Médecine,...</li>
+            <li>Banque, Assurances, Bourses...</li>
         </ul>
 
     </div>
@@ -170,7 +173,7 @@
         down (4 times) to make it back to it's correct size.
         
     -->
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4" data-wait="10">
         <span class="try">répondons à cette</span>
         <h1>question<sup>*</sup></h1>
         <span class="footnote"><sup>*</sup> en toute bonne foi...</span>
@@ -184,45 +187,52 @@
         element should be rotated by 90 degrees clockwise.
         
     -->
-    <div id="domaines" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-        <p><strong style="font-size: 80px">L'informatique</strong><br /> peut se regrouper autour de plusieurs domaines...
+    <div id="domaines" class="step" data-x="-500" data-y="3000" data-rotate="90" data-scale="5" data-wait="10">
+        <p>
+            <strong style="font-size: 80px">L'informatique</strong><br /> peut se regrouper autour de plusieurs domaines...
         </p>
     </div>
 
-    <div id="industrielle" class="step domaine" data-x="3500" data-y="2100" data-rotate="180" data-scale="1">
-        <p>
+    <div id="industrielle" class="step domaine" data-x="3500" data-y="2100" data-rotate="180" data-scale="1" data-wait="30">
+        <h1>
             <strong class="numbering">1.</strong> L'<strong>informatique industrielle</strong>, qui consiste à piloter et automatiser des machines.
-        </p>
+        </h1>
 
-       <iframe width="640" height="480" src="http://www.youtube.com/embed/E1fkg8BSMoA?autoplay=1" frameborder="0" allowfullscreen></iframe>
+       <iframe width="640" height="480" src="http://www.youtube.com/embed/E1fkg8BSMoA?autoplay=1&loop=1&playlist=E1fkg8BSMoA" frameborder="0" allowfullscreen></iframe>
 
-       <p class="legend">On apprend dans ce domaine l'électronique, la programmation sur circuits imprimés, la robotique et le fonctionnement de base d'ordinateurs.</p>
+       <p class="legend">On apprend dans ce domaine l'électronique, la programmation sur circuits imprimés, la robotique et le fonctionnement de base des ordinateurs. L'informatique embarquée est également un domaine très intéressant, où vous pourrez travailler sur des systèmes tels que des robots, des GPS, des mini-ordinateurs, des écrans de contrôle,...</p>
     </div>
 
 
-    <div id="developpement" class="step domaine" data-x="5000" data-y="2100" data-rotate="180" data-scale="1">
-        <p>
+    <div id="developpement" class="step domaine" data-x="5000" data-y="2100" data-rotate="180" data-scale="1" data-wait="30">
+        <h1>
             <strong class="numbering">2.</strong> Le <strong>développement logiciel</strong>
-        </p>
+        </h1>
 
-        <p class="developpement-detail">
-            Ce domaine est très <b style="font-size: 50px">très</b> vaste, car il consiste à utiliser les langages de programmations pour développer des logiciels, pour tout et n'importe quoi :
-        </p>
+        <div class="developpement-detail">
+            <p>
+                Le développement logiciel est très <b style="font-size: 50px">très</b> vaste, car il consiste à utiliser des <b>langages de programmations</b> (Java, C++, Python, HTML/CSS/Javascript,...) pour créer des applications, sites Internet et logiciels.
+            </p>
 
-        <p> 
-            Bien entendu, vous aurez l'occasion de passer d'un domaine à l'autre si vous le souhaitez au cours de votre carrière professionnel. C'est ce qui est génial 
-            avec l'informatique, on apprend chaque jour de nouvelles choses.
-        </p>
+            <p> <br/>
+                Bien entendu, si vous avez une préférence aujourd'hui, rien ne vous empêchera de passer d'un domaine à l'autre au cours de votre carrière professionnelle.   
+            </p>
+
+            <p style="font-weight: bold; margin: 20px 0 0">C'est ce qui est génial avec l'informatique, on apprend chaque jour de nouvelles choses !</p>
+
+            <p>Voici quelques secteurs dans lesquels vous pouvez devenir informaticien :</p>
+
+        </div>
 
     </div>
 
 
-    <div id="systeme-information" class="step sous-domaine" data-x="1000" data-y="3600" data-scale="3">
-        <p>
-            <strong class="sub-numbering">2. A.</strong> L'informatique des <strong>systèmes d'informations</strong>.
-        </p>
+    <div id="systeme-information" class="step sous-domaine" data-x="1000" data-y="3600" data-rotate="0" data-scale="1" data-wait="30">
+        <h1>
+            <strong class="sub-numbering">2. A.</strong> <strong>Systèmes d'informations</strong>
+        </h1>
 
-        <pre class="prettyprint">
+        <pre class="prettyprint" style="font-size: 14px; line-height: 14px">
 package com.masociete.comptabilite;
 
 public class Comptabilite {
@@ -261,50 +271,109 @@ public class Comptabilite {
 
     </div>
 
-    <div id="site-internet" class="step sous-domaine" data-x="2500" data-y="3600" data-scale="3">
+    <div id="site-internet" class="step sous-domaine" data-x="2500" data-y="3600" data-rotate="0" data-scale="1" data-wait="30">
+        <h1>
+            <strong class="sub-numbering">2. B.</strong> <strong>Sites Internet</strong>
+        </h1>
+
         <p>
-            <strong class="numbering">2. B.</strong> Le <strong>développement Internet</strong>
+            Si vous aimez Internet et souhaitez le comprendre et créer vos propres sites Internet, voici ce qu'il vous faut.
         </p>
 
-            <li>Création de sites Internet (métiers : intégrateur Web, designer Web, développeur Web)</li>
+        <p>
+            Il existe pleins de métiers associés au Web :
+        </p>
+
+        <pre class="prettyprint">
+&lt;dl style="margin: 50px 0 0 0">
+    &lt;dt>Développeur Web&lt;/dt>
+    &lt;dd>
+        Programmation des sites Internet, communication entre sites, 
+        intégration avec les réseaux sociaux 
+        &lt;a href="http://www.facebook.com">Facebook&lt;/a>
+        &lt;a href="http://www.twitter.com">Twitter&lt;/a>,...
+    &lt;/dd>
+
+    &lt;dt>&lt;attr title="Concepteur">Designer&lt/attr> Web&lt;/dt>
+    &lt;dd>
+        Un métier créatif où vous proposez des maquettes de sites 
+        Internet à des clients. Ce métier nécessite d'être doué en graphisme.
+    &lt;/dd>
+
+    &lt;dt>Intégrateur Web&lt;/dt>
+    &lt;dd>
+        Intégration des maquettes de sites Internet et préparation de la version finale
+    &lt;/dd>
+&lt;/dl></pre>
+
+        <p style="font-style: italic; font-size: 25px">(Voici un petit extrait de HTML, le langage qui définit les pages Internet. Si vous êtes curieux, cliquez 
+            dans n'importe quel site Internet sur le bouton droit de la souris et sélectionnez <b>Afficher la source</b> pour en voir les détails).</p>
 
     </div>
 
-    <div id="developpement-smartphone" class="step sous-domaine" data-x="4000" data-y="3600" data-scale="3">
-        <p>
-            <strong class="numbering">2. C.</strong> Le <strong>développement sur Smartphones et Tablettes</strong>
-        </p>
+    <div id="developpement-smartphone" class="step sous-domaine" data-x="4000" data-y="3600" data-scale="1" data-wait="30">
+        <h1>
+            <strong class="sub-numbering">2. C.</strong> Applications pour <strong>Smartphones &amp; Tablettes</strong>
+        </h1>
 
-                        <li>Développement d'applications pour smartphones et tablettes (consultation des mails, vérification des horaires de trains, réveils, changement du statut sur les réseaux sociaux...)</li>
+        <div style="text-align: center">
+            <img src="googleplay.png" width="850"/>
+        </div>
+
+        <p class="legend">
+            Développement d'applications pour smartphones : consultation des mails, vérification des horaires de trains, réveil matin, réseaux sociaux, application 
+            GPS, petits jeux...
+        </p>
 
 
     </div>
 
-    <div id="developpement-application" class="step sous-domaine" data-x="5500" data-y="3600" data-scale="3">
-        <p>
-            <strong class="numbering">2. D.</strong> Le <strong>développement d'applications</strong>
-        </p>
+    <div id="developpement-application" class="step sous-domaine" data-x="5500" data-y="3600" data-scale="1" data-wait="30">
+        <h1>
+            <strong class="sub-numbering">2. D.</strong> Le <strong>développement d'applications</strong>
+        </h1>
 
-                                  <li>Développement d'applications, comme des logiciels graphiques, des logiciels de gestions, des utilitaires, des logiciels de bureautiques, sur PC / Mac.</li>
+        <div style="text-align: center">
+            <img src="qtdesigner.png" width="950"/>
+        </div>
+
+        <p>
+            Création d'applications pour <b>ordinateur</b> : logiciels de graphismes, logiciels de gestions, de statistiques, utilitaires, logiciels de bureautiques, etc., le tout sur <b>PC / Mac</b>, pour <b>Windows</b> ou <b>Linux</b>.
+        </p>
 
 
     </div>
 
-    <div id="developpement-jeux-videos" class="step sous-domaine" data-x="7000" data-y="3600" data-scale="3">
-        <p>
-            <strong class="numbering">2. E.</strong> Le <strong>développement de jeux vidéos</strong>
+    <div id="developpement-jeux-videos" class="step sous-domaine" data-x="7000" data-y="3600" data-scale="1" data-wait="30">
+        <h1>
+            <strong class="sub-numbering">2. E.</strong> Le <strong>développement de jeux vidéos</strong>
+        </h1>
+
+        <div style="text-align: center">
+            <img src="jeuxvideos.png" width="850"/>
+        </div>
+
+        <p class="legend">Développement de jeux vidéos dans des grands <b>studios de développements</b> ou dans une <b>société indépendante</b>. 
+            <br/>
+            Les jeux vidéos requièrent un grand nombre de profession pour être créés de A à Z : 
+            <span style="font-weight:    bold;">Scénariste, Game Designer, Directeur artistique, Graphiste
+Animateur,
+Level designer,
+Programmeur,
+Musicien et Sound designer,
+Testeur,
+Chef de projet</span>,...
         </p>
 
-            <li>Développement de jeux vidéos, dans des grands studios de développements, pour consoles de salon, PC, mais aussi smartphones (Android, Iphone) et tablettes tactiles,...</li>
 
 
     </div>
 
 
-    <div id="reseau" class="step domaine" data-x="6500" data-y="2100" data-rotate="180" data-scale="1">
-        <p>
+    <div id="reseau" class="step domaine" data-x="6500" data-y="2100" data-rotate="180" data-scale="1" data-wait="30">
+        <h1>
             <strong class="numbering">4.</strong> L' <strong>administration réseau</strong>.
-        </p>
+        </h1>
 
         <table>
             <tr>
@@ -314,7 +383,7 @@ public class Comptabilite {
                 </td>
                 <td>
                     <img src="datacenter.jpg" width="400" />
-                    <div style="font-size: 35px">À droite, de véritables professionnels</div>
+                    <div style="font-size: 35px">À droite, de vrais professionnels</div>
                 </td>
             </tr>
         </table>
@@ -324,30 +393,31 @@ public class Comptabilite {
     </div>
 
 
-    <div id="assistance" class="step domaine" data-x="8000" data-y="2100" data-rotate="180" data-scale="1">
-        <p>
+    <div id="assistance" class="step domaine" data-x="8000" data-y="2100" data-rotate="180" data-scale="1" data-wait="30">
+        <h1>
             <strong class="numbering">5.</strong> L'assistance <strong>informatique</strong>
-        </p>
+        </h1>
 
       <iframe width="640" height="480" src="http://www.youtube.com/embed/M8pR1rZZHEs?autoplay=1" frameborder="0" allowfullscreen></iframe>
+      <p class="legend">Je crois que cette personne a besoin de son assistance informatique ;)</p>
 
-       <p class="legend">Ce domaine permet d'être recruté dans une entreprise ou dans une société proposant ses services à d'autres entreprises pour réparer les ordinateurs du parc informatique (changer les pièces défectueuses, améliorer le matériel), et dépanner les utilisateurs ne sachant pas utiliser correctement les logiciels de leur ordinateur.</p>
+       <p class="legend" style="margin: 20px 0 0">Ce domaine permet de travailler dans une entreprise pour y réparer les ordinateurs du parc informatique (changer les pièces défectueuses, améliorer le matériel), et dépanner les utilisateurs ne sachant pas utiliser correctement les logiciels de leur ordinateur.</p>
     </div>
 
 
 
 
-    <div id="recherche" class="step domaine" data-x="9500" data-y="2100" data-rotate="180" data-scale="1">
-        <p>
+    <div id="recherche" class="step domaine" data-x="9500" data-y="2100" data-rotate="180" data-scale="1" data-wait="30">
+        <h1>
             <strong class="numbering">6.</strong> La <strong>recherche informatique</strong>.
-        </p>
+        </h1>
 
        <img src="simulation-galaxies.jpg" width="900" />
 
 
-       <p class="legend">La science a un grand besoin d'informaticiens également, pour effectuer des simulations dans des super-calculateurs (simulation nucléaire, mathématiques, cosmologique), modéliser 
-        des systèmes extrêmement complexes pour déterminer automatiquement la bonne réponse à une question (analyse ADN, analyse d'images pour détecter des objets), ou 
-        pour des domaines encore à explorer, comme l'intelligence artificielle, la création de prototypes,...</p>
+       <p class="legend">La science a besoin d'informaticiens également, pour effectuer des simulations dans des <b>super-calculateurs</b> (simulation nucléaire, mathématiques, cosmologique), modéliser 
+        des <b>systèmes complexes</b> pour tenter de les comprendre et les interpréter (analyse ADN, analyse d'images pour détecter des objets), ou 
+        dans des domaines encore à explorer, comme l'<b>intelligence artificielle</b>, la <b>robotique</b>, les <b>drones</b>,...</p>
     </div>
 
 
@@ -361,7 +431,7 @@ public class Comptabilite {
         positioned far away from us (by 3000px).
         
     -->
-    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1" data-wait="10">
         <p style="text-align: center">et bien <b>d'autres domaines</b> encore...</p>
     </div>
 
@@ -385,16 +455,17 @@ public class Comptabilite {
         Only one current step has the `present` class.
         
     -->
-    <div id="competences" class="step" data-x="4500" data-y="-850" data-rotate="270" data-scale="6">
+    <div id="competences" class="step" data-x="4500" data-y="-850" data-rotate="270" data-scale="6" data-wait="25">
         <p>
-            L'informatique nécessite de la <b class="positioning">patience</b>, de la <b class="rotating">curiosité</b> et de maîtriser les <b class="scaling">mathématiques</b>, la <b class="logique">logique</b>  et l'<b class="anglais">anglais</b>.
+            L'informatique nécessite de la <b class="positioning skill">patience</b>, de la <b class="rotating skill">curiosité</b> et de maîtriser les <b class="scaling skill">mathématiques</b>, la <b class="logique skill">logique</b>  et l'<b class="anglais skill">anglais</b>.
         </p>
 
-        <p class="legend">Il vous faudra une bonne capacité d'écoute et de compréhension des personnes, afin d'analyser et comprendre comment transcrire en code informatique les situations décrites par vos interlocuteurs. Et oui, en tant qu'informaticien, on passe facilement <b>40% à 50%</b> de son temps à analyser et discuter, le reste se passant devant l'écran. 
+        <p class="legend">Il vous faudra une bonne capacité d'écoute et de compréhension des personnes, afin de réussir à transcrire en code informatique les situations décrites par vos interlocuteurs.</p>
+        <p class="legend">Et oui, en tant qu'informaticien, on passe facilement <b>30% à 40%</b> de son temps à analyser et à discuter, le reste se passant devant l'écran. 
         </p>
     </div>
 
-    <div id="ps" class="step" data-x="9000" data-y="-3500" data-rotate="270" data-scale="2">
+    <div id="ps" class="step" data-x="9000" data-y="-3500" data-rotate="270" data-scale="2" data-wait="15">
         <p>
             <b>PS :</b> Vouloir devenir informaticien parce qu'on passe ses journées sur <b>Facebook</b> ou <b>Call of Duty</b> n'est pas toujours une bonne idée. 
         </p>
@@ -403,23 +474,23 @@ public class Comptabilite {
 
         <p class="quote" style="margin: 40px 0 0">
             <span style="font-size: 60px; color: #777">«</span> 
-            Être curieux et aimer découvrir la manière dont les systèmes fonctionnent et comment on peut les réparer. 
+            Être curieux et aimer découvrir la manière dont les systèmes fonctionnent et, éventuellement, savoir les réparer.
             <span style="font-size: 60px; color: #777">»</span>
         </p>
     </div>
 
-    <div id="imagination" class="step" data-x="8500" data-y="-1000" data-scale="6">
+    <div id="imagination" class="step" data-x="8500" data-y="-1000" data-scale="6" data-wait="10">
         <p>...Et la profession n'est pas réservée qu'aux <b>garçons</b>, les <b>filles</b> sont également d'excellentes <b class="imagination">informaticiennes.</b></p>
     </div>
 
-    <div id="decouverte-solo" class="step" data-x="16000" data-y="-600" data-scale="6">
+    <div id="decouverte-solo" class="step" data-x="16000" data-y="-600" data-scale="6" data-wait="20">
         <h1>Une dernière chose...</h1>
         <p>
-            L'informatique est un des seuls métier que l'on peut apprendre par <b>soi-même</b>, juste avec un <b>ordinateur</b>, une <b>chaise</b> et une connexion <b>Internet</b> !
+            L'informatique est un des seuls métiers que l'on peut apprendre par <b>soi-même</b>, juste avec un <b>ordinateur</b>, une <b>chaise</b> et une connexion <b>Internet</b> !
         </p>
-        <p>Internet propose des <b>millions de documents et de pages</b> pour apprendre et comprendre les ordinateurs, le réseau,...
+        <p>Internet propose des <b>millions de documents et de pages</b> pour apprendre et comprendre les ordinateurs, le réseau, la programmation,...
         </p>
-        <p>Bref, soyez curieux et n'attendez pas que l'école vous apprennent des choses : apprenez-les vous même !</p>
+        <p style="font-weight: bold">Bref, soyez curieux et n'attendez pas que l'école vous apprennent des choses : lancez-vous tout seul !</p>
 
         <p class="exemples">Exemple: <a href="http://fr.wikibooks.org/wiki/Le_langage_HTML">Le Langage HTML</a>, <a href="http://python.lycee.free.fr/">Débuter avec Python au Lycée</a>, 
         <a href="http://www.siteduzero.com/informatique/tutoriels/comprendre-les-reseaux-tcp-ip-et-le-fonctionnement-d-internet">Fonctionnement d'Internet</a>...
@@ -427,13 +498,13 @@ public class Comptabilite {
     </div>
 
 
-    <div id="source" class="step" data-x="8300" data-y="4000" data-rotate="20" data-scale="4">
+    <div id="source" class="step" data-x="8300" data-y="6000" data-rotate="20" data-scale="4" data-wait="10">
         <p>Vous voulez en savoir plus ?</p>
         <q>Je suis là pour répondre à vos questions.</q>
     </div>
 
-    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>N'hésitez pas !</p>
+    <div id="one-more-thing" class="step" data-x="6000" data-y="5000" data-scale="2" data-wait="30">
+        <p>Ne soyez pas timide ;)</p>
     </div>
 
     <!--
@@ -451,7 +522,7 @@ public class Comptabilite {
         CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
         
     -->
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10" data-wait="15">
     </div>
 
 </div>
@@ -516,7 +587,7 @@ if ("ontouchstart" in document.documentElement) {
 
         api.init();
 
-        prepareNext($("#first").data("wait"));
+        //prepareNext($("#first").data("wait"));
 
         document.addEventListener("keyup", function ( event ) {
             if ( event.keyCode === 27 ) {
@@ -571,7 +642,10 @@ if ("ontouchstart" in document.documentElement) {
 
 
 </script>
-<script src="prettify/run_prettify.js"></script>
+<script src="prettify/prettify.js"></script>
+<script type="text/javascript">
+prettyPrint();
+</script>
 
 <!--
     
@@ -599,7 +673,7 @@ if ("ontouchstart" in document.documentElement) {
 -->
 <div id="pause">II</div>
 
-<div id="countdown"></div>
+<div id="countdown">0</div>
 
 
 <div id="contact">
