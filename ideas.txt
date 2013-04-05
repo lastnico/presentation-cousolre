@@ -1,3 +1,4 @@
+
 Idées de pages
 
 Compétences :
@@ -8,8 +9,17 @@ Bonne connaissance en informatique (passer sa journée sur Facebook et Call of D
 Être curieux, aimer découvrir comment les systèmes fonctionnent et comment les réparer.
 
 
+Refaire QR Code
+Hébergement chez Github
 
 TODO:
 
 Image pour Développement
 Countdown
+
+Titre: Dév Info
+Couleurs sur les compétences
+
+Images++
+
+Scinder Développement logiciel en sous partie

@@ -294,6 +294,20 @@ a:focus {
     line-height: 72px;
 }
 
+.slide h1 {
+    margin:         50px 0 0;
+    font-size:      60px;
+
+    letter-spacing:     4px;
+    text-transform:     uppercase;
+}
+
+.slide h1 em {
+    font-size:      30px;
+    font-variant:   small-caps;
+    color:             #ccc;
+}
+
 
 /*
     And now we start to style each step separately.
@@ -468,6 +482,20 @@ pre.prettyprint {
     transition-delay:         0.5s;
 }
 
+#competences.present .logique {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform:    rotate(-10deg);
+    -ms-transform:     rotate(-10deg);
+    -o-transform:      rotate(-10deg);
+    transform:         rotate(-10deg);
+
+    -webkit-transition-delay: 0.75s;
+    -moz-transition-delay:    0.75s;
+    -ms-transition-delay:     0.75s;
+    -o-transition-delay:      0.75s;
+    transition-delay:         0.75s;
+}
+
 #competences.present .anglais {
     -webkit-transform: rotate(10deg);
     -moz-transform:    rotate(10deg);
@@ -475,11 +503,7 @@ pre.prettyprint {
     -o-transform:      rotate(10deg);
     transform:         rotate(10deg);
 
-    -webkit-transition-delay: 0.75s;
-    -moz-transition-delay:    0.75s;
-    -ms-transition-delay:     0.75s;
-    -o-transition-delay:      0.75s;
-    transition-delay:         0.75s;
+    transition-delay:         1s;
 }
 
 
