@@ -142,7 +142,7 @@
         Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
         
     -->
-    <div id="geek" class="step slide" data-x="0" data-y="-1500" data-wait="20">
+    <div id="geek" class="step slide" data-x="0" data-y="-1500" data-wait="10">
         <q style="text-align: center">Est-ce un travail de Geek...</q>
         <div style="text-align: center; margin: 10px auto">
 
@@ -152,7 +152,7 @@
         <q style="font-size: 25px; text-align: center">...où l'on est collé toute la journée devant un ordinateur ?</q></q>
     </div>
 
-    <div id="passionnant" class="step slide" data-x="1100" data-y="-1500" data-wait="20">
+    <div id="passionnant" class="step slide" data-x="1100" data-y="-1500" data-wait="15">
         <q>...Ou un métier <b>passionnant</b> et <b>social</b>, vous permettant de travailler dans de nombreux domaines professionnels : </q>
 
         <ul style="margin: 40px 0 0 30px;">
@@ -173,7 +173,7 @@
         down (4 times) to make it back to it's correct size.
         
     -->
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="4" data-wait="10">
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4" data-wait="5">
         <span class="try">répondons à cette</span>
         <h1>question<sup>*</sup></h1>
         <span class="footnote"><sup>*</sup> en toute bonne foi...</span>
@@ -187,7 +187,7 @@
         element should be rotated by 90 degrees clockwise.
         
     -->
-    <div id="domaines" class="step" data-x="-500" data-y="3000" data-rotate="90" data-scale="5" data-wait="10">
+    <div id="domaines" class="step" data-x="-500" data-y="3000" data-rotate="90" data-scale="5" data-wait="5">
         <p>
             <strong style="font-size: 80px">L'informatique</strong><br /> peut se regrouper autour de plusieurs domaines...
         </p>
@@ -587,7 +587,7 @@ if ("ontouchstart" in document.documentElement) {
 
         api.init();
 
-        //prepareNext($("#first").data("wait"));
+        prepareNext($("#first").data("wait"));
 
         document.addEventListener("keyup", function ( event ) {
             if ( event.keyCode === 27 ) {
@@ -677,8 +677,8 @@ prettyPrint();
 
 
 <div id="contact">
-    <div style="float: right; width: 150px; margin: 5px 5px 5px 15px">
-        <span style="color: #666;">Scannez ce code pour retrouver cette présentation sur le Net.</span>
+    <div style="float: right; width: 150px; margin: 2px 5px 5px 15px">
+        <span style="color: #666;">Scannez ce code pour retrouver cette présentation sur le Net ou sur <a href="http://bit.ly/10Dxwe8">http://bit.ly/10Dxwe8</a>.</span>
     </div>
 
     <div style="float: right;">
